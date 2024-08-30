@@ -1,0 +1,50 @@
+<div class="collectionBar">
+  <div class="page-width">
+    <div class="row">
+      <div class="col-12">
+        <div class="textWithBtn">
+          <h3>{{ section.settings.barTitle }}</h3>
+          <div class="arrowBtnWrap">
+            <a href="{{ section.settings.btnText }}" class="arrowBtn">
+              {{ section.settings.btnText }}
+              <span class="arrow">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.886 27.2808L12.8239 25.2188L20.5428 17.4998L12.8239 9.78083L14.886 7.71875L24.667 17.4998L14.886 27.2808Z" fill="#FDE3E0"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.rr-collection-bar.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "barTitle",
+      "label": "t:sections.rr-collection-bar.settings.barTitle.label"
+    },
+
+    {
+      "type": "text",
+      "id": "btnText",
+      "label": "t:sections.rr-collection-bar.settings.btnText.label"
+    },
+    {
+      "type": "url",
+      "id": "btnUrl",
+      "label": "t:sections.rr-collection-bar.settings.btnUrl.label"
+    }
+  ]
+}
+{% endschema %}

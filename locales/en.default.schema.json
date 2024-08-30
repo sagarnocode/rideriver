@@ -3416,6 +3416,23 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "rr-collection-bar": {
+      "name": "RR Collection Bar",
+      "settings": {
+        "barTitle": {
+          "label": "subscribe Text"
+        },
+        "btnText": {
+          "label": "Button Text"
+        },
+        "btnUrl": {
+          "label": "Button Url"
+        }
+      },
+      "presets": {
+        "name": "RR Collection Bar"
+      }
     }
   }
 }

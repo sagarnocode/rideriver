@@ -30,9 +30,9 @@
         "image": "shopify:\/\/shop_images\/image_14.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "bottom-right",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -43,20 +43,20 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
+        "title": "Shop Everything",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "color_scheme": "scheme-4",
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -67,10 +67,58 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "rr-collection-bar": {
+      "type": "rr-collection-bar",
+      "settings": {
+        "barTitle": "NY 2024 Collection is Here!",
+        "btnText": "Shop AW 23 (45)",
+        "btnUrl": "shopify:\/\/collections"
+      }
+    },
+    "collage_qjMg8h": {
+      "type": "collage",
+      "blocks": {
+        "image_TcgYLy": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "product_HVtyER": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "collection_xeRhmj": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TcgYLy",
+        "product_HVtyER",
+        "collection_xeRhmj"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "rr-collection-bar",
+    "collage_qjMg8h"
   ]
 }

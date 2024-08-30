@@ -23,4 +23,43 @@
   opacity: 1;
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
   rotate: 180deg;
+}
+
+.mainCollection {
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  row-gap: 80px;
+}
+.mainCollection.grid--3-col-desktop .grid__item {
+  width: calc(33.33% - 53.3333333333px);
+  max-width: calc(33.33% - 53.3333333333px);
+}
+.mainCollection .card-wrapper:hover .full-unstyled-link {
+  text-decoration: none;
+}
+.mainCollection .card-information > .price {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.mainCollection .card__heading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.collectionBar {
+  background: linear-gradient(262.49deg, #FBCDC8 24.72%, #C4E1EE 69.03%);
+}
+.collectionBar .textWithBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 475px;
+}
+.collectionBar .textWithBtn h3 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 75px;
 }/*# sourceMappingURL=custom.css.map */
