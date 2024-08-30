@@ -27,45 +27,81 @@
     }
   }
 }
-.mainCollection {
-  column-gap: 80px;
-  row-gap: 80px;
-  &.grid--3-col-desktop 
-  .grid__item {
-    width: calc(33.33% - 80px* 2 / 3);
-    max-width: calc(33.33% - 80px* 2 / 3);
-}
-.card-wrapper:hover {
-  .full-unstyled-link {
-    text-decoration: none;
+.rr-product-banner {
+  margin-top: 0;
+  .product-title {
+    // font-family: Söhne;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px;
+    margin-bottom: 20px;
   }
-}
-.card-information > .price {
-margin-top: 10px;
-font-size: 20px;
-font-weight: 400;
-line-height: 30px;
-}
-.card__heading {
-  font-size: 20px;
-font-weight: 600;
-line-height: 30px;
-
-}
-
-}
-
-.collectionBar {
-  background: linear-gradient(262.49deg, #FBCDC8 24.72%, #C4E1EE 69.03%);
-.textWithBtn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 475px;
-  h3 {
+  .price {
+    // font-family: Söhne;
     font-size: 60px;
     font-weight: 400;
     line-height: 75px;
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+  }
+  a.seeDetailsBtn {
+    height: 65px;
+    padding: 17px 30px;
+    border-radius: 38px;
+    background: #007db6;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #deeef6;
+    display: inline-flex;
+      text-decoration: none;
+      &:hover {
+      text-decoration: none;
+    }
+
+    .arrow {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
   }
 }
+.mainCollection {
+  column-gap: 80px;
+  row-gap: 80px;
+  &.grid--3-col-desktop .grid__item {
+    width: calc(33.33% - 80px * 2 / 3);
+    max-width: calc(33.33% - 80px * 2 / 3);
+  }
+  .card-wrapper:hover {
+    .full-unstyled-link {
+      text-decoration: none;
+    }
+  }
+  .card-information > .price {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .card__heading {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+
+.collectionBar {
+  background: linear-gradient(262.49deg, #fbcdc8 24.72%, #c4e1ee 69.03%);
+  .textWithBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 475px;
+    h3 {
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 75px;
+    }
+  }
 }

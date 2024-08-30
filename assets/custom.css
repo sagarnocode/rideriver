@@ -25,6 +25,43 @@
   rotate: 180deg;
 }
 
+.rr-product-banner {
+  margin-top: 0;
+}
+.rr-product-banner .product-title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 75px;
+  margin-bottom: 20px;
+}
+.rr-product-banner .price {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 75px;
+  margin-top: 20px !important;
+  margin-bottom: 20px;
+}
+.rr-product-banner a.seeDetailsBtn {
+  height: 65px;
+  padding: 17px 30px;
+  border-radius: 38px;
+  background: #007db6;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #deeef6;
+  display: inline-flex;
+  text-decoration: none;
+}
+.rr-product-banner a.seeDetailsBtn:hover {
+  text-decoration: none;
+}
+.rr-product-banner a.seeDetailsBtn .arrow {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
 .mainCollection {
   -moz-column-gap: 80px;
        column-gap: 80px;
@@ -50,7 +87,7 @@
 }
 
 .collectionBar {
-  background: linear-gradient(262.49deg, #FBCDC8 24.72%, #C4E1EE 69.03%);
+  background: linear-gradient(262.49deg, #fbcdc8 24.72%, #c4e1ee 69.03%);
 }
 .collectionBar .textWithBtn {
   display: flex;
