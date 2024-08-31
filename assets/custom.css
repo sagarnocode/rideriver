@@ -1,3 +1,7 @@
+body {
+  font-size: 16px;
+}
+
 .banner {
   margin-top: -84px;
 }
@@ -25,14 +29,51 @@
   rotate: 180deg;
 }
 
+.rr-product-banner {
+  margin-top: 0;
+}
+.rr-product-banner .product-title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 75px;
+  margin-bottom: 20px;
+}
+.rr-product-banner .price {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 75px;
+  margin-top: 20px !important;
+  margin-bottom: 20px;
+}
+.rr-product-banner a.seeDetailsBtn {
+  height: 65px;
+  padding: 17px 30px;
+  border-radius: 38px;
+  background: #007db6;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #deeef6;
+  display: inline-flex;
+  text-decoration: none;
+}
+.rr-product-banner a.seeDetailsBtn:hover {
+  text-decoration: none;
+}
+.rr-product-banner a.seeDetailsBtn .arrow {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
 .mainCollection {
-  -moz-column-gap: 80px;
-       column-gap: 80px;
-  row-gap: 80px;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  row-gap: 5rem;
 }
 .mainCollection.grid--3-col-desktop .grid__item {
-  width: calc(33.33% - 53.3333333333px);
-  max-width: calc(33.33% - 53.3333333333px);
+  width: calc(33.33% - 3.3333333333rem);
+  max-width: calc(33.33% - 3.3333333333rem);
 }
 .mainCollection .card-wrapper:hover .full-unstyled-link {
   text-decoration: none;
@@ -50,16 +91,70 @@
 }
 
 .collectionBar {
-  background: linear-gradient(262.49deg, #FBCDC8 24.72%, #C4E1EE 69.03%);
+  background: linear-gradient(262.49deg, #fbcdc8 24.72%, #c4e1ee 69.03%);
 }
 .collectionBar .textWithBtn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 475px;
+  min-height: 29.688rem;
 }
 .collectionBar .textWithBtn h3 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
-  line-height: 75px;
+  line-height: 4.688rem;
+}
+
+.footer {
+  background: #FBF486;
+}
+.footer .grid {
+  flex-wrap: nowrap;
+}
+.footer .footer-block {
+  max-width: 195px;
+}
+.footer .footer__content-top {
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+.arrowBtnWrap {
+  background: #4C2522;
+  padding: 8px 20px 8px 30px;
+  border-radius: 38px;
+  font-size: 1.125rem;
+  color: #FDE3E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrowBtnWrap a {
+  color: #FDE3E0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.arrowBtnWrap .arrow {
+  display: flex;
+}
+.arrowBtnWrap .arrow svg {
+  height: 2.188rem;
+}
+
+.newsWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.newsWrap h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.newsWrap .newsletter-form {
+  align-items: flex-start;
+  margin: 0;
+  max-width: unset;
+  min-width: 300px;
 }/*# sourceMappingURL=custom.css.map */

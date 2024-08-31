@@ -2,11 +2,105 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "rr_newsletter_wQW9aV": {
+      "type": "rr-newsletter",
+      "blocks": {
+        "heading_8FBrUn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_PP4eFp": {
+          "type": "paragraph",
+          "settings": {
+            "text": ""
+          }
+        },
+        "email_form_4nGGHP": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_8FBrUn",
+        "paragraph_PP4eFp",
+        "email_form_4nGGHP"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_qjfVk8": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Account",
+            "menu": "footer-menu-1"
+          }
+        },
+        "link_list_BVqGw7": {
+          "type": "link_list",
+          "settings": {
+            "heading": "River",
+            "menu": "footer"
+          }
+        },
+        "link_list_REe33q": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop",
+            "menu": "footer"
+          }
+        },
+        "link_list_kbtmF8": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Info",
+            "menu": "footer"
+          }
+        },
+        "link_list_KQTjdm": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Social",
+            "menu": "footer"
+          }
+        },
+        "link_list_p7jeAg": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Legal",
+            "menu": "footer"
+          }
+        },
+        "brand_information_Bt6N7m": {
+          "type": "brand_information",
+          "disabled": true,
+          "settings": {
+            "show_social": true
+          }
+        }
+      },
+      "block_order": [
+        "link_list_qjfVk8",
+        "link_list_BVqGw7",
+        "link_list_REe33q",
+        "link_list_kbtmF8",
+        "link_list_KQTjdm",
+        "link_list_p7jeAg",
+        "brand_information_Bt6N7m"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
@@ -21,6 +115,7 @@
     }
   },
   "order": [
+    "rr_newsletter_wQW9aV",
     "footer"
   ]
 }
