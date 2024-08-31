@@ -190,8 +190,7 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    
+    }
   },
   "order": [
     "image_banner",
@@ -200,7 +199,6 @@
     "featured_collection_fUaxdQ",
     "rr-product-banner",
     "featured_collection_BKGcjD",
-    "rr-newsletter",
-    "collage_qjMg8h",
+    "rr-newsletter"
   ]
 }
