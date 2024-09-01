@@ -119,6 +119,7 @@
       "blocks": {
         "heading": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Browse our latest products",
             "heading_size": "h0"
@@ -126,6 +127,7 @@
         },
         "button": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/all",
@@ -134,14 +136,21 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "product_ge7KL6": {
+          "type": "product",
+          "settings": {
+            "product": "river-shirt-white"
+          }
         }
       },
       "block_order": [
         "heading",
-        "button"
+        "button",
+        "product_ge7KL6"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/image_14.png",
+        "image": "shopify:\/\/shop_images\/Pannier_box_1.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-right",
@@ -153,7 +162,7 @@
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
-    },
+    }
   },
   "order": [
     "image_banner",
