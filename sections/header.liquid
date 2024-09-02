@@ -111,9 +111,10 @@
 {%- endif -%}
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-  <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
-  </symbol>
+  
+    <symbol width="36" height="36" viewBox="0 0 36 36"  id="icon-search" stroke="currentColor" fill="currentColor">
+      <path d="M27.439 29.5607L22.3765 24.4982C20.9455 23.0672 20.6433 20.8262 21.6408 19.0487C22.2123 18.0302 22.5093 16.8692 22.4995 15.6917C22.468 12.0347 19.468 9.03323 15.811 9.00098C13.984 8.98448 12.2703 9.68573 10.9795 10.975C9.6888 12.2642 8.98605 13.9795 9.0003 15.8042C9.0288 19.4627 12.028 22.4665 15.6865 22.5002C16.6023 22.5077 17.494 22.3367 18.3333 21.9887L19.4823 24.76C18.268 25.2632 16.9803 25.513 15.6588 25.5002C10.3743 25.4515 6.04155 21.112 6.0003 15.8275C5.98005 13.192 6.99555 10.7147 8.8593 8.85248C10.7028 7.01123 13.1463 6.00098 15.7488 6.00098C15.7788 6.00098 15.808 6.00098 15.838 6.00098C21.1203 6.04748 25.4545 10.3832 25.4995 15.6655C25.5138 17.365 25.084 19.0427 24.2568 20.5165C23.914 21.127 24.013 21.892 24.4975 22.3765L29.56 27.439L27.439 29.56V29.5607Z" fill="currentColor"/>
+    </symbol>
 
   <symbol id="icon-reset" class="icon icon-close"  fill="none" viewBox="0 0 18 18" stroke="currentColor">
     <circle r="8.5" cy="9" cx="9" stroke-opacity="0.2"/>
@@ -192,6 +193,7 @@
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
+          
         elsif section.settings.menu_type_desktop != 'drawer'
           render 'header-mega-menu'
         endif
@@ -230,7 +232,27 @@
         </h1>
       {%- endif -%}
     {%- endif -%}
+    {% comment %} {%- liquid
+    if section.settings.menu != blank
+      if section.settings.menu_type_desktop == 'dropdown'
+        render 'header-dropdown-menu-right'
+        
+      elsif section.settings.menu_type_desktop != 'drawer'
+        render 'header-mega-menu'
+      endif
+    endif
+  %} {% endcomment %}
 
+  {% comment %} <div>
+<ul>
+  <li>
+    <a href="" ></a>
+  </li>
+</ul>
+
+  </div> {% endcomment %}
+
+  
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -264,7 +286,7 @@
               {%- if customer and customer.has_avatar? -%}
                 {{ customer | avatar }}
               {%- else -%}
-                {% render 'icon-account' %}
+                {% render 'icon-account-custom' %}
               {%- endif -%}
             </account-icon>
           {%- else -%}
@@ -292,9 +314,9 @@
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
-            render 'icon-cart-empty'
+            render 'icon-cart-custom-empty'
           else
-            render 'icon-cart'
+            render 'icon-cart-custom'
           endif
         -%}
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>

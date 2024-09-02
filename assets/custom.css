@@ -188,4 +188,43 @@ body {
   margin: 0;
   max-width: unset;
   min-width: 300px;
+}
+
+.bannerHeading {
+  max-width: 687px;
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 20px;
+}
+
+.roundBtn {
+  color: #934842;
+  background: #FAFAFA;
+  border-radius: 50px;
+}
+.roundBtn a {
+  color: #934842;
+  font-size: 20px;
+  line-height: 1.875rem;
+  font-weight: 600;
+}
+.roundBtn a:not([disabled]):hover::after, .roundBtn a:after {
+  --border-offset: none;
+  box-shadow: none;
+}
+
+.header__icon .icon.account,
+.header__icon .icon-search,
+.search__button .icon.icon-search {
+  height: 36px;
+  width: 36px;
+}
+
+.scrolled-past-header .icon.account path,
+.scrolled-past-header .icon-search path,
+.scrolled-past-header .icon.icon-search path,
+.scrolled-past-header .icon-cart path,
+.scrolled-past-header .icon-close path {
+  fill: #303030;
+  color: #303030;
 }/*# sourceMappingURL=custom.css.map */

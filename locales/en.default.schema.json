@@ -1106,6 +1106,9 @@
         "menu": {
           "label": "Menu"
         },
+        // "menu": {
+        //   "label": "Menu Right"
+        // },
         "menu_type_desktop": {
           "label": "Desktop menu type",
           "info": "Menu type is automatically optimized for mobile.",
