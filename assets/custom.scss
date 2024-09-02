@@ -1,6 +1,37 @@
 body {
   font-size: 16px;
 }
+.section-header {
+  transition: all 0.5s ease;
+}
+.header__heading-link {
+  padding: 0;
+}
+.header__menu-item, .header__icon, .header__active-menu-item {
+  color: #303030;
+  transition: all 0.5s ease;
+}
+.header-index {
+  .header__heading-logo-wrapper svg path {
+    fill: #F7FBFD;
+  transition: all 0.5s ease;
+
+  }
+  .header__menu-item, .header__icon, .header__active-menu-item {
+    color: #F7FBFD;
+  }
+}
+.shopify-section-header-sticky {
+  background: white;
+  .header__menu-item, .header__icon, .header__active-menu-item {
+    color: #303030;
+  }
+  .header-index {
+    .header__heading-logo-wrapper svg path {
+      fill: #303030;
+    }
+  }
+}
 
 .banner {
   margin-top: -84px;
