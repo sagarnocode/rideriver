@@ -2,17 +2,46 @@
 {{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+        padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      }
+  .collapsible-content-wrapper-narrow {
+    max-width: unset;
   }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
+  .accordion__title {
+    font-size: 3.75rem;
+    line-height: 4.688rem;
+    font-weight: 400;
   }
+  .accordion__content p {
+    color: #333;
+    font-size: 18px;
+  }
+  .collapsible-content summary:hover {
+    background: transparent;
+  }
+  .collapsible-content summary:hover .accordion__title {
+    text-decoration: none;
+  }
+  .collapsible-content .accordion {
+    padding: 19px 0;
+  }
+  summary .icon-caret {
+    height: 10px;
+  }
+  summary .icon-caret path {
+    fill: #1A1B1F;
+  }
+  .customerQuestion .caption-with-letter-spacing {
+    color: #867C7C;
+  }
+      @media screen and (min-width: 750px) {
+        .section-{{ section.id }}-padding {
+          padding-top: {{ section.settings.padding_top }}px;
+          padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+      }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">

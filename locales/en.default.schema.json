@@ -1106,9 +1106,6 @@
         "menu": {
           "label": "Menu"
         },
-        // "menu": {
-        //   "label": "Menu Right"
-        // },
         "menu_type_desktop": {
           "label": "Desktop menu type",
           "info": "Menu type is automatically optimized for mobile.",
@@ -1347,7 +1344,6 @@
         "name": "Image banner"
       }
     },
-
     "rr-product-banner": {
       "name": "RR Product banner",
       "settings": {
@@ -3195,6 +3191,53 @@
       },
       "presets": {
         "name": "Rich text"
+      }
+    },
+    "product-feature": {
+      "name": "Product Feature",
+      "settings": {
+        "desktop_content_position": {
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          },
+          "label": "Desktop content position",
+          "info": "Position is automatically optimized for mobile."
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          },
+          "label": "Content alignment"
+        },
+        "full_width": {
+          "label": "Make section full width"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Heading",
+          "settings": {
+            "heading": {
+              "label": "Heading",
+              "default": "Talk about your brand"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Product Feature"
       }
     },
     "video": {

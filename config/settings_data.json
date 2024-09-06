@@ -98,7 +98,8 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p>© 2023 River Mobility \u2028Private Limited<\/p>",
+    "brand_image": "shopify:\/\/shop_images\/Group_1229.png",
     "brand_image_width": 100,
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -149,9 +150,9 @@
       },
       "scheme-2": {
         "settings": {
-          "background": "#f3f3f3",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#121212",
+          "text": "#4c2522",
           "button": "#121212",
           "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",

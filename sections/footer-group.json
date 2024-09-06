@@ -83,9 +83,22 @@
         },
         "brand_information_Bt6N7m": {
           "type": "brand_information",
-          "disabled": true,
           "settings": {
             "show_social": true
+          }
+        },
+        "text_xDq3qw": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<p>River Mobility Private Limited\u2028No. 25\/3, KIADB EPIP Zone\u2028Hoodi Road, Seetharampalya\u2028Bengaluru, Bengaluru Urban\u2028Karnataka 560048<\/p><p><\/p>"
+          }
+        },
+        "text_tg8Tw8": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<p>Email: support@rideriver.com\u2028Phone: 8047 245 011 \/ 8047 245 012<br\/>CIN: U341 00KA 2022 PTC1 58972\u2028GST: 29AA LCR7 167F 1ZU<\/p>"
           }
         }
       },
@@ -96,7 +109,9 @@
         "link_list_kbtmF8",
         "link_list_KQTjdm",
         "link_list_p7jeAg",
-        "brand_information_Bt6N7m"
+        "brand_information_Bt6N7m",
+        "text_xDq3qw",
+        "text_tg8Tw8"
       ],
       "settings": {
         "color_scheme": "scheme-1",
